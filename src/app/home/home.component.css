@@ -1,0 +1,30 @@
+
+.example-card {
+   width: 500px;
+    padding-left: 8%;
+    margin-left: 25%;
+    height: 600px;
+    
+  }
+  .title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  mat-card-subtitle{
+    font-family: sans-serif;
+  }
+  .category{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    display:flex
+  }
+ .rating{
+   padding-top: 10px;
+   font-family: 'Times New Roman', Times, serif ;
+ }
+.review{
+  margin-top: 40px;
+}
+.userRating{
+  display:flex;
+}

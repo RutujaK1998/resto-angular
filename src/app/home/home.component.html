@@ -1,0 +1,44 @@
+  <span class="border border-dark">
+  <div class="container overflow-auto">
+  <mat-card class="example-card">
+  <mat-card-header>
+  <img mat-card-image src="{{items.cover_image}}" alt="Cafe Goodluck">
+  </mat-card-header>
+  <mat-card-title><h3 class="title">{{items.name}}</h3></mat-card-title>
+  <mat-card-subtitle>{{items.area}} {{items.city}}</mat-card-subtitle>
+  <div style="width:400px">
+    <div *ngFor="let cat of items.category" class="category" >
+    <i class="material-icons">check_box</i> 
+    <p style="margin-left:15px">{{cat}}</p>
+  </div>
+  </div>
+ 
+  <div class="d-flex flex-row" style="display:flex; justify-content: space-between;">
+  <mat-card-content>
+    <h4 class="rating">Dining Ratings</h4>
+    <div class="p-2 feature">
+      <div class="cont">
+      <div *ngFor = "let rates of items.feature_rating.rate">
+        <h5>{{rates.name}} </h5> 
+        <star-rating value={{rates.rating}} totalstars={{totalRating}} checkedcolor="red" uncheckedcolor="lightgray" size="24px"
+        readonly="true" > </star-rating>
+       
+      </div>
+    </div>
+    </div>
+    </mat-card-content>
+    <mat-card-content style="padding-left:20px">
+      <h4 class="rating">User Ratings</h4>
+   <div class="p-2 review">
+     <div *ngFor = "let vote of items.review_rating.votes" class="userRating">
+    <star-rating value={{vote.rating}} totalstars= {{totalstar}} checkedcolor="orange" uncheckedcolor="lightgray" size="24px"
+    readonly="true"> </star-rating>   {{vote.votes}} 
+   
+  </div>
+  </div>
+    </mat-card-content>
+  </div>
+   </mat-card>
+   </div>
+   
+  </span>
