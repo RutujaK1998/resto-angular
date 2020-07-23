@@ -1,15 +1,30 @@
-
+/* * {
+  box-sizing: border-box;
+} */
 .example-card {
    width: 500px;
     padding-left: 8%;
     margin-left: 25%;
     height: 600px;
-    
+
+}
+@media screen and (max-width: 992px) {
+  .row {
+    flex: 50%;
   }
-  .title{
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex-direction: column;
+  }
+}
+    
+.card-title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  mat-card-subtitle{
+  .card-subtitle{
     font-family: sans-serif;
   }
   .category{

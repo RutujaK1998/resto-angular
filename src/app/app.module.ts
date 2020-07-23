@@ -9,6 +9,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RatingModule } from 'ng-starrating';
+import { ResponsiveModule } from 'ngx-responsive'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { RatingModule } from 'ng-starrating';
       animationDuration: 300,
     }),
     RatingModule,
+    ResponsiveModule.forRoot()
     
   ],
   providers: [],
